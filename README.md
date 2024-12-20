@@ -1,5 +1,3 @@
-# Test-Cases-for-the-KanbanBoard-Application
-
 # KanbanBoard Application Specification
 
 ## Overview
