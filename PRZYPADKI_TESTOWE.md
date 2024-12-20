@@ -1,12 +1,12 @@
-# Przypadki Testowe dla Tablicy Kanban
+# Test Cases for Kanban Board
 
-W repozytorium znajdują się przypadki testowe, które weryfikują funkcjonalność aplikacji Tablica Kanban. Poniżej przedstawiono uporządkowaną listę przypadków testowych, pogrupowaną według funkcjonalności.
+This repository contains test cases for verifying the functionality of the Kanban Board application. Below is the structured list of test cases, organized by feature.
 
 ---
 
 ## 1. Dodawanie Kolumn
 
-### Przypadek Testowy: Rezygnacja z Dodania Nowej Kolumny
+### Przypadek Testowy: Rezygnacja z dodania nowej kolumny
 - **Cel**: Sprawdzenie, czy użytkownik może anulować dodanie nowej kolumny.
 - **Warunki wstępne**:  
   1. Aplikacja [http://kanbanboard.pl/](http://kanbanboard.pl/) działa poprawnie.  
@@ -18,6 +18,9 @@ W repozytorium znajdują się przypadki testowe, które weryfikują funkcjonalno
   4. Kliknij „Anuluj”.
 - **Oczekiwany rezultat**:  
   Kolumna nie zostaje dodana jako ostatnia po prawej stronie.
+  
+  ![Test Case Screenshot]()
+
 
 ---
 
