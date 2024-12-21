@@ -1,6 +1,6 @@
 # KanbanBoard Application Specification
 
-### Tool:
+## Tool:
 ![TestLink](https://img.shields.io/badge/TestLink-yellow?style=flat?logo=TestLink)
 
 ## Overview
