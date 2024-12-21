@@ -56,3 +56,4 @@ Each user can customize the workflow by:
 
 ---
 
+ <td><img src="https://img.shields.io/badge/Jira-%2300055A?style=flat&logo=jira&logoColor=white" alt="Jira" /></td>
