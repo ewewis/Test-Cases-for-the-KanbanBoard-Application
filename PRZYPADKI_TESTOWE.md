@@ -19,7 +19,7 @@ This repository contains test cases for verifying the functionality of the Kanba
 - **Oczekiwany rezultat**:  
   Kolumna nie zostaje dodana jako ostatnia po prawej stronie.
   
-  ![Test Case Screenshot]()
+  ![Test Case Screenshot](https://github.com/ewewis/Test-Cases-for-the-KanbanBoard-Application/blob/main/Rezygnacja_z_dodania_nowej_kolumny.png)
 
 
 ---
