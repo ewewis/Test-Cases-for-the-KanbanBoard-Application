@@ -2,6 +2,9 @@
 
 This repository contains test cases for verifying the functionality of the Kanban Board application. Below is the structured list of test cases, organized by feature.
 
+# Tool:
+![TestLink](https://img.shields.io/badge/TestLink-yellow?style=flat?logo=TestLink)
+
 ---
 
 ## 1. Dodawanie Kolumn
