@@ -7,34 +7,41 @@ This repository contains test cases for verifying the functionality of the Kanba
 
 ---
 
-## 1. Dodawanie Kolumn
+# 1. Dodawanie Kolumn
 
-### Przypadek Testowy: Rezygnacja z dodania nowej kolumny
-- **Cel**: Sprawdzenie, czy użytkownik może anulować dodanie nowej kolumny.
-- **Warunki wstępne**:  
-  1. Aplikacja [http://kanbanboard.pl/](http://kanbanboard.pl/) działa poprawnie.  
-  2. W aplikacji widoczny jest przycisk „Add new column”.
-- **Kroki**:
-  1. Wejdź na stronę [http://kanbanboard.pl/](http://kanbanboard.pl/).
-  2. Kliknij przycisk „Add new column”.
-  3. Wpisz nazwę kolumny.
-  4. Kliknij „Anuluj”.
-- **Oczekiwany rezultat**:  
-  Kolumna nie zostaje dodana jako ostatnia po prawej stronie.
+## Przypadek Testowy: Rezygnacja z dodania nowej kolumny
+
+### Cel testu:
+Sprawdzenie, czy użytkownik może anulować dodanie nowej kolumny.
+
+### Warunki początkowe:  
+1. Aplikacja [http://kanbanboard.pl/](http://kanbanboard.pl/) działa poprawnie.  
+2. W aplikacji widoczny jest przycisk „Add new column”.
+
+### Kroki testowe i oczekiwane rezultaty:
+1. **Krok:** Wejdź na stronę [http://kanbanboard.pl/](http://kanbanboard.pl/).
+   **Oczekiwany rezultat:** Strona otwiera się poprawnie.
+2. **Krok:** Kliknij przycisk „Add new column”.
+   **Oczekiwany rezultat:** Wyświetla się okno dialogowe umożliwiające dodanie kolumny.
+3. **Krok:** Wpisz nazwę kolumny.
+   **Oczekiwany rezultat:** W polu pojawia się wpisana nazwa.
+4. **Krok:** Kliknij „Anuluj”.
+    **Oczekiwany rezultat:** Kolumna nie zostaje dodana jako ostatnia po prawej stronie.
+  
   
   [Test Case Screenshot](https://github.com/ewewis/Test-Cases-for-the-KanbanBoard-Application/blob/main/Rezygnacja_z_dodania_nowej_kolumny.png)
 
-### Przypadek testowy: Dodanie nowej kolumny w aplikacji [http://kanbanboard.pl/]
+## Przypadek testowy: Dodanie nowej kolumny w aplikacji [http://kanbanboard.pl/]
 
-## Cel testu:
+### Cel testu:
 Sprawdzenie możliwości utworzenia nowej kolumny.
 
-## Warunki początkowe:
+### Warunki początkowe:
 1. Aplikacja [http://kanbanboard.pl/](http://kanbanboard.pl/) działa poprawnie.
 2. W aplikacji znajduje się przycisk dodania nowej kolumny: „add new column”.
 
 
-## Kroki testowe i oczekiwane rezultaty:
+### Kroki testowe i oczekiwane rezultaty:
 
 1. **Krok:** Wejdź na stronę [http://kanbanboard.pl/](http://kanbanboard.pl/).  
    **Oczekiwany rezultat:** Strona otwiera się poprawnie.
