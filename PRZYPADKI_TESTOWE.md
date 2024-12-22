@@ -24,6 +24,33 @@ This repository contains test cases for verifying the functionality of the Kanba
   
   [Test Case Screenshot](https://github.com/ewewis/Test-Cases-for-the-KanbanBoard-Application/blob/main/Rezygnacja_z_dodania_nowej_kolumny.png)
 
+### Przypadek testowy: Dodanie nowej kolumny w aplikacji [http://kanbanboard.pl/]
+
+## Cel testu:
+Sprawdzenie możliwości utworzenia nowej kolumny.
+
+## Warunki początkowe:
+1. Aplikacja [http://kanbanboard.pl/](http://kanbanboard.pl/) działa poprawnie.
+2. W aplikacji znajduje się przycisk dodania nowej kolumny: „add new column”.
+
+
+## Kroki testowe i oczekiwane rezultaty:
+
+1. **Krok:** Wejdź na stronę [http://kanbanboard.pl/](http://kanbanboard.pl/).  
+   **Oczekiwany rezultat:** Strona otwiera się poprawnie.
+
+2. **Krok:** Kliknij przycisk „add new column”.  
+   **Oczekiwany rezultat:** Wyświetla się okno dialogowe umożliwiające dodanie kolumny.
+
+3. **Krok:** W polu nazwa wpisz „wakacje”.  
+   **Oczekiwany rezultat:** W polu pojawia się wpisana nazwa „wakacje”.
+
+4. **Krok:** Naciśnij „OK”.  
+   **Oczekiwany rezultat:** Kolumna o nazwie „wakacje” zostaje dodana jako ostatnia po prawej stronie.
+
+
+
+
 
 ---
 
