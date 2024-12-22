@@ -1,8 +1,5 @@
 # KanbanBoard Application Specification
 
-## Tool:
-![TestLink](https://img.shields.io/badge/TestLink-yellow?style=flat?logo=TestLink)
-
 ## Overview
 The Kanban Board application, available at [http://kanbanboard.pl/](http://kanbanboard.pl/), is a simple tool to manage tasks using a customizable workflow. It features a corkboard-style interface with default columns:
 
