@@ -7,7 +7,7 @@ This repository contains test cases for verifying the functionality of the Kanba
 
 ---
 
-# 1. Dodawanie Kolumn
+# 1. Dodawanie kolumn
 
 ## TC01: Rezygnacja z dodania nowej kolumny
 
@@ -132,34 +132,84 @@ Sprawdzenie, czy możliwe jest dodanie dwóch kolumn o tej samej nazwie.
 [Test Case Screenshot](https://github.com/ewewis/Test-Cases-for-the-KanbanBoard-Application/blob/main/Dodanie_dw%C3%B3ch_kolumn_o_tej_samej_nazwie.png)
 
 
+## TC06: Dodanie kolumny ze znakami diakrytycznymi w nazwie
+
+### Cel testu:
+Sprawdzenie, czy możliwe jest dodanie kolumny, której nazwa zawiera znaki diakrytyczne.
+
+### Warunki początkowe:
+1. Aplikacja [http://kanbanboard.pl/](http://kanbanboard.pl/) działa poprawnie.
+2. W aplikacji widoczny jest przycisk dodania nowej kolumny: „add new column”.
+
+### Kroki testowe i oczekiwane rezultaty:
+
+1. **Krok:** Wejdź na stronę [http://kanbanboard.pl/](http://kanbanboard.pl/).  
+   **Oczekiwany rezultat:** Strona otwiera się poprawnie.
+
+2. **Krok:** Kliknij przycisk „add new column”.  
+   **Oczekiwany rezultat:** Otwiera się pole do wpisania nazwy kolumny.
+
+3. **Krok:** W polu nazwa wpisz „ńść”.  
+   **Oczekiwany rezultat:** Kolumna o nazwie „ńść” zostaje dodana do listy jako ostatnia po prawej stronie.
+
+[Test Case Screenshot](https://github.com/ewewis/Test-Cases-for-the-KanbanBoard-Application/blob/main/Dodanie_kolumny_ze_znakami_diakrytycznymi_w_nazwie.png)
+
+## TC07: Dodanie 15 kolumn w aplikacji
+
+### Cel testu:
+Sprawdzenie, czy można dodać 15 nowych kolumn.
+
+### Warunki początkowe:
+1. Aplikacja [http://kanbanboard.pl/](http://kanbanboard.pl/) działa poprawnie.
+2. W aplikacji widoczny jest przycisk dodania nowej kolumny: „add new column”.
+
+### Kroki testowe i oczekiwane rezultaty:
+
+1. **Krok:** Wejdź na stronę [http://kanbanboard.pl/](http://kanbanboard.pl/).  
+   **Oczekiwany rezultat:** Strona otwiera się poprawnie.
+
+2. **Krok:** Kliknij przycisk „add new column”.  
+   **Oczekiwany rezultat:** Otwiera się pole do wpisania nazwy kolumny.
+
+3. **Krok:** W polu nazwa wpisz „1”.  
+   **Oczekiwany rezultat:** Kolumna o nazwie „1” zostaje dodana do listy jako ostatnia po prawej stronie.
+
+4. **Krok:** Powtórz kroki 2–3, wpisując kolejno nazwy „2”, „3”, ..., „15”.  
+   **Oczekiwany rezultat:** Po dodaniu ostatniej kolumny w aplikacji, oprócz trzech domyślnych kolumn („to do”, „doing”, „done”), widocznych jest 15 nowych kolumn — łącznie 18 kolumn.
+
+[Test Case Screenshot](https://github.com/ewewis/Test-Cases-for-the-KanbanBoard-Application/blob/main/Dodanie_15_nowych_kolumn.png)
+
+
+## TC08: Dodanie kolumny z nazwą zawierającą 40 znaków
+
+### Cel testu:
+Sprawdzenie, czy można dodać kolumnę, której nazwa zawiera 40 znaków.
+
+### Warunki początkowe:
+1. Aplikacja [http://kanbanboard.pl/](http://kanbanboard.pl/) działa poprawnie.
+2. W aplikacji znajduje się przycisk „add new column”.
+
+### Kroki testowe i oczekiwane rezultaty:
+
+1. **Krok:** Wejdź na stronę [http://kanbanboard.pl/](http://kanbanboard.pl/).  
+   **Oczekiwany rezultat:** Strona otwiera się poprawnie.
+
+2. **Krok:** Kliknij przycisk „add new column”.  
+   **Oczekiwany rezultat:** Otwiera się pole do wpisania nazwy kolumny.
+
+3. **Krok:** W polu nazwa wpisz dokładnie 40 znaków, np. `aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa`.  
+   **Oczekiwany rezultat:** Kolumna o nazwie zawierającej 40 znaków zostaje dodana do listy jako ostatnia po prawej stronie.
+
+4. **Krok:** Kliknij „ok”.  
+   **Oczekiwany rezultat:** Kolumna z nazwą o długości 40 znaków jest poprawnie widoczna w interfejsie aplikacji.
+
+[Test Case Screenshot](https://github.com/ewewis/Test-Cases-for-the-KanbanBoard-Application/blob/main/Dodanie_kolumny_o_nazwie_zawieraj%C4%85cej_40_znak%C3%B3w.png)
+
 ---
 
-## 2. Usuwanie Zadań
+## 2. Dodawanie zadań w kolumnach
 
-### Przypadek Testowy: Usunięcie Nowo Utworzonego Zadania
-- **Cel**: Sprawdzenie, czy użytkownik może usunąć nowo utworzone zadanie.
-- **Warunki wstępne**:  
-  1. Na tablicy istnieje nowo utworzone zadanie.  
-  2. Opcja „Delete” jest dostępna dla zadań.
-- **Kroki**:
-  1. Otwórz menu zadania.
-  2. Kliknij „Delete”.
-  3. Potwierdź usunięcie.
-- **Oczekiwany rezultat**:  
-  Zadanie zostaje poprawnie usunięte z tablicy.
 
----
-
-## 3. Przenoszenie Zadań
-
-### Przypadek Testowy: Przeniesienie Zadania do Kolumny „Done”
-- **Cel**: Sprawdzenie, czy użytkownik może przenieść zadanie do kolumny „Done”.
-- **Warunki wstępne**:  
-  1. Na tablicy istnieje co najmniej jedno zadanie oraz kolumna „Done”.
-- **Kroki**:
-  1. Przeciągnij i upuść zadanie do kolumny „Done”.
-- **Oczekiwany rezultat**:  
-  Zadanie pojawia się w kolumnie „Done”.
 
 ---
 
