@@ -209,6 +209,76 @@ Sprawdzenie, czy można dodać kolumnę, której nazwa zawiera 40 znaków.
 
 ## 2. Dodawanie zadań w kolumnach
 
+## TC09: Dodanie nowego zadania w kolumnie „to do”
+
+### Cel testu:
+Sprawdzenie możliwości dodania nowego zadania.
+
+### Warunki początkowe:
+1. Aplikacja [http://kanbanboard.pl/](http://kanbanboard.pl/) działa poprawnie.
+2. W aplikacji znajduje się przycisk „add task”.
+
+### Kroki testowe i oczekiwane rezultaty:
+
+1. **Krok:** Wejdź na stronę [http://kanbanboard.pl/](http://kanbanboard.pl/).  
+   **Oczekiwany rezultat:** Strona otwiera się poprawnie.
+
+2. **Krok:** Kliknij „add task” w kolumnie „to do”.  
+   **Oczekiwany rezultat:** Otwiera się pole do wpisania nazwy zadania.
+
+3. **Krok:** Wpisz nazwę zadania „niebo”.  
+   **Oczekiwany rezultat:** W kolumnie „to do” pojawia się nowe zadanie o nazwie „niebo”.
+
+[Test Case Screenshot](https://github.com/ewewis/Test-Cases-for-the-KanbanBoard-Application/blob/main/Dodanie_nowego_zadania.png)
+
+
+## TC10: Rezygnacja z dodania nowego zadania w kolumnie „to do”
+
+### Cel testu:
+Sprawdzenie możliwości rezygnacji z dodania nowego zadania w kolumnie „to do”.
+
+### Warunki początkowe:
+1. Aplikacja [http://kanbanboard.pl/](http://kanbanboard.pl/) działa poprawnie.
+2. W aplikacji znajduje się przycisk „add task”.
+
+### Kroki testowe i oczekiwane rezultaty:
+
+1. **Krok:** Wejdź na stronę [http://kanbanboard.pl/](http://kanbanboard.pl/).  
+   **Oczekiwany rezultat:** Strona otwiera się poprawnie.
+
+2. **Krok:** W kolumnie „to do” kliknij przycisk „add task”.  
+   **Oczekiwany rezultat:** Otwiera się pole do wpisania nazwy zadania.
+
+3. **Krok:** Wpisz nazwę zadania.  
+   **Oczekiwany rezultat:** Nazwa zostaje poprawnie wpisana w pole.
+
+4. **Krok:** Kliknij „anuluj”.  
+   **Oczekiwany rezultat:** Zadanie nie pojawia się w kolumnie „to do”.
+
+[Test Case Screenshot](https://github.com/ewewis/Test-Cases-for-the-KanbanBoard-Application/blob/main/Rezygnacja_z_dodania_nowego_zadania.png)
+
+
+## TC11: Dodanie nowego zadania bez nazwy w kolumnie „to do”
+
+### Cel testu:
+Sprawdzenie, czy istnieje możliwość dodania zadania bez nazwy.
+
+### Warunki początkowe:
+1. Aplikacja [http://kanbanboard.pl/](http://kanbanboard.pl/) działa poprawnie.
+2. W aplikacji znajduje się przycisk „add task”.
+
+### Kroki testowe i oczekiwane rezultaty:
+
+1. **Krok:** Wejdź na stronę [http://kanbanboard.pl/](http://kanbanboard.pl/).  
+   **Oczekiwany rezultat:** Strona otwiera się poprawnie.
+
+2. **Krok:** Kliknij „add task” w kolumnie „to do”.  
+   **Oczekiwany rezultat:** Otwiera się pole do wpisania nazwy zadania.
+
+3. **Krok:** Naciśnij „ok” bez wpisywania żadnej nazwy.  
+   **Oczekiwany rezultat:** Zadanie pojawia się w kolumnie „to do” jako puste.
+
+[Test Case Screenshot](https://github.com/ewewis/Test-Cases-for-the-KanbanBoard-Application/blob/main/Dodanie_zadania_bez_nazwy.png)
 
 
 ---
