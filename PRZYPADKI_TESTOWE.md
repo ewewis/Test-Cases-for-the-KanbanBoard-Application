@@ -280,6 +280,89 @@ Sprawdzenie, czy istnieje możliwość dodania zadania bez nazwy.
 
 [Test Case Screenshot](https://github.com/ewewis/Test-Cases-for-the-KanbanBoard-Application/blob/main/Dodanie_zadania_bez_nazwy.png)
 
+## TC12: Dodanie więcej niż 3 zadań w kolumnie 'doing'
+
+### Cel testu:
+Sprawdzenie, czy można dodać więcej niż 3 zadania w kolumnie 'doing'.
+
+### Warunki początkowe:
+1. Aplikacja [http://kanbanboard.pl/](http://kanbanboard.pl/) działa poprawnie.
+2. W kolumnie 'doing' znajduje się przycisk „add task”.
+
+### Kroki testowe i oczekiwane rezultaty:
+
+1. **Krok:** Wejdź na stronę [http://kanbanboard.pl/](http://kanbanboard.pl/).  
+   **Oczekiwany rezultat:** Strona otwiera się poprawnie.
+
+2. **Krok:** W kolumnie 'doing' poprzez przycisk „add task” dodaj trzy zadania.  
+   **Oczekiwany rezultat:** W kolumnie 'doing' znajdują się trzy zadania.
+
+3. **Krok:** W kolumnie 'doing' naciśnij „add task”, aby dodać czwarte zadanie.  
+   **Oczekiwany rezultat:** Nie można dodać czwartego zadania. W kolumnie 'doing' widoczne są tylko trzy zadania.
+
+[Test Case Screenshot](https://github.com/ewewis/Test-Cases-for-the-KanbanBoard-Application/blob/main/Dodanie_wi%C4%99cej_ni%C5%BC_trzech_zada%C5%84.png)
+
+
+## TC13: Dodanie zadania w nowo utworzonej kolumnie
+
+### Cel testu:
+Sprawdzenie, czy jest możliwość dodawania zadań do kolumn utworzonych przez użytkownika.
+
+### Warunki początkowe:
+1. Aplikacja [http://kanbanboard.pl/](http://kanbanboard.pl/) działa poprawnie.
+2. W aplikacji znajduje się przycisk „add new column”.
+3. W aplikacji znajduje się przycisk „add task”.
+
+### Kroki testowe i oczekiwane rezultaty:
+
+1. **Krok:** Wejdź na stronę [http://kanbanboard.pl/](http://kanbanboard.pl/).  
+   **Oczekiwany rezultat:** Strona otwiera się poprawnie.
+
+2. **Krok:** Kliknij „add new column”.  
+   **Oczekiwany rezultat:** Otwiera się pole do wpisania nazwy kolumny.
+
+3. **Krok:** Wpisz nazwę kolumny „A” i naciśnij „<ok>”.  
+   **Oczekiwany rezultat:** Dodana zostaje nowa kolumna o nazwie „A”.
+
+4. **Krok:** W nowo utworzonej kolumnie „A” kliknij „add task”.  
+   **Oczekiwany rezultat:** Otwiera się pole do wpisania nazwy zadania.
+
+5. **Krok:** Wpisz nazwę zadania i naciśnij „<ok>”.  
+   **Oczekiwany rezultat:** W nowej kolumnie „A” widoczne jest zadanie.
+
+[Test Case Screenshot](https://github.com/ewewis/Test-Cases-for-the-KanbanBoard-Application/blob/main/Dodanie_zadania_w_nowo_utworzonej_kolumnie.png)
+
+## TC14: Dodanie dwóch zadań o tej samej nazwie
+
+### Cel testu:
+Sprawdzenie, czy w kolumnie można dodać dwa zadania o tej samej nazwie.
+
+### Warunki początkowe:
+1. Aplikacja [http://kanbanboard.pl/](http://kanbanboard.pl/) działa poprawnie.
+2. W aplikacji znajduje się przycisk `<add task>`.
+
+### Kroki testowe i oczekiwane rezultaty:
+
+1. **Krok:** Wejdź na stronę [http://kanbanboard.pl/](http://kanbanboard.pl/).  
+   **Oczekiwany rezultat:** Strona otwiera się poprawnie.
+
+2. **Krok:** W kolumnie "to do" kliknij `<add task>`, wpisz nazwę "b" i naciśnij `<ok>`.  
+   **Oczekiwany rezultat:** W kolumnie "to do" widoczne jest zadanie o nazwie "b".
+
+3. **Krok:** Wykonaj to samo co w kroku 2: kliknij `<add task>`, wpisz nazwę "b" i naciśnij `<ok>`.  
+   **Oczekiwany rezultat:** W kolumnie "to do" widoczne są dwa zadania o tej samej nazwie "b".
+
+![Przypadek testowy: Dodanie dwóch zadań o tej samej nazwie](<https://github.com/ewewis/Test-Cases-for-the-KanbanBoard-Application/blob/main/Dodanie_dw%C3%B3ch_zada%C5%84_o_tej_samej_nazwie.png>)
+
+---
+
+
+
+
+
+
+
+
 
 ---
 
