@@ -209,7 +209,7 @@ Sprawdzenie, czy można dodać kolumnę, której nazwa zawiera 40 znaków.
 
 ## 2. Dodawanie zadań w kolumnach
 
-## TC09: Dodanie nowego zadania w kolumnie „to do”
+## TC01: Dodanie nowego zadania w kolumnie „to do”
 
 ### Cel testu:
 Sprawdzenie możliwości dodania nowego zadania.
@@ -232,7 +232,7 @@ Sprawdzenie możliwości dodania nowego zadania.
 [Test Case Screenshot](https://github.com/ewewis/Test-Cases-for-the-KanbanBoard-Application/blob/main/Dodanie_nowego_zadania.png)
 
 
-## TC10: Rezygnacja z dodania nowego zadania w kolumnie „to do”
+## TC02: Rezygnacja z dodania nowego zadania w kolumnie „to do”
 
 ### Cel testu:
 Sprawdzenie możliwości rezygnacji z dodania nowego zadania w kolumnie „to do”.
@@ -258,7 +258,7 @@ Sprawdzenie możliwości rezygnacji z dodania nowego zadania w kolumnie „to do
 [Test Case Screenshot](https://github.com/ewewis/Test-Cases-for-the-KanbanBoard-Application/blob/main/Rezygnacja_z_dodania_nowego_zadania.png)
 
 
-## TC11: Dodanie nowego zadania bez nazwy w kolumnie „to do”
+## TC03: Dodanie nowego zadania bez nazwy w kolumnie „to do”
 
 ### Cel testu:
 Sprawdzenie, czy istnieje możliwość dodania zadania bez nazwy.
@@ -280,7 +280,7 @@ Sprawdzenie, czy istnieje możliwość dodania zadania bez nazwy.
 
 [Test Case Screenshot](https://github.com/ewewis/Test-Cases-for-the-KanbanBoard-Application/blob/main/Dodanie_zadania_bez_nazwy.png)
 
-## TC12: Dodanie więcej niż 3 zadań w kolumnie 'doing'
+## TC04: Dodanie więcej niż 3 zadań w kolumnie 'doing'
 
 ### Cel testu:
 Sprawdzenie, czy można dodać więcej niż 3 zadania w kolumnie 'doing'.
@@ -303,7 +303,7 @@ Sprawdzenie, czy można dodać więcej niż 3 zadania w kolumnie 'doing'.
 [Test Case Screenshot](https://github.com/ewewis/Test-Cases-for-the-KanbanBoard-Application/blob/main/Dodanie_wi%C4%99cej_ni%C5%BC_trzech_zada%C5%84.png)
 
 
-## TC13: Dodanie zadania w nowo utworzonej kolumnie
+## TC05: Dodanie zadania w nowo utworzonej kolumnie
 
 ### Cel testu:
 Sprawdzenie, czy jest możliwość dodawania zadań do kolumn utworzonych przez użytkownika.
@@ -332,7 +332,7 @@ Sprawdzenie, czy jest możliwość dodawania zadań do kolumn utworzonych przez 
 
 [Test Case Screenshot](https://github.com/ewewis/Test-Cases-for-the-KanbanBoard-Application/blob/main/Dodanie_zadania_w_nowo_utworzonej_kolumnie.png)
 
-## TC14: Dodanie dwóch zadań o tej samej nazwie
+## TC06: Dodanie dwóch zadań o tej samej nazwie
 
 ### Cel testu:
 Sprawdzenie, czy w kolumnie można dodać dwa zadania o tej samej nazwie.
@@ -352,14 +352,84 @@ Sprawdzenie, czy w kolumnie można dodać dwa zadania o tej samej nazwie.
 3. **Krok:** Wykonaj to samo co w kroku 2: kliknij `<add task>`, wpisz nazwę "b" i naciśnij `<ok>`.  
    **Oczekiwany rezultat:** W kolumnie "to do" widoczne są dwa zadania o tej samej nazwie "b".
 
-![Przypadek testowy: Dodanie dwóch zadań o tej samej nazwie](<https://github.com/ewewis/Test-Cases-for-the-KanbanBoard-Application/blob/main/Dodanie_dw%C3%B3ch_zada%C5%84_o_tej_samej_nazwie.png>)
+[Test Case Screenshot](https://github.com/ewewis/Test-Cases-for-the-KanbanBoard-Application/blob/main/Dodanie_dw%C3%B3ch_zada%C5%84_o_tej_samej_nazwie.png)
+
+
+## TC07: Dodanie zadania ze znakami specjalnymi w nazwie
+
+### Cel testu
+Sprawdzenie, czy można utworzyć zadanie z nazwą zawierającą znaki specjalne.
+
+### Warunki początkowe
+1. Aplikacja [http://kanbanboard.pl/](http://kanbanboard.pl/) działa poprawnie.
+2. W aplikacji widoczny jest przycisk `<add task>`.
+
+### Kroki testowe i oczekiwane rezultaty
+
+1. **Krok:** Wejdź na stronę [http://kanbanboard.pl/](http://kanbanboard.pl/).  
+   **Oczekiwany rezultat:** Strona otwiera się poprawnie.
+
+2. **Krok:** Kliknij `<add task>` w dowolnej kolumnie.  
+   **Oczekiwany rezultat:** Otwiera się pole do wprowadzenia nazwy zadania.
+
+3. **Krok:** W polu nazwa wpisz `#$@` i naciśnij `<ok>`.  
+   **Oczekiwany rezultat:** W kolumnie widoczne jest zadanie o nazwie `#$@`.
+
+[Test Case Screenshot](https://github.com/ewewis/Test-Cases-for-the-KanbanBoard-Application/blob/main/Dodanie_zadania_ze_znakami_specjalnymi_w_nazwie.png)
+
+
+## TC08: Dodanie zadania ze znakami diakrytycznymi w nazwie
+
+### Cel testu
+Sprawdzenie, czy istnieje możliwość dodania zadania z nazwą zawierającą znaki diakrytyczne.
+
+### Warunki początkowe
+1. Aplikacja [http://kanbanboard.pl/](http://kanbanboard.pl/) działa poprawnie.
+2. W aplikacji znajduje się przycisk `<add task>`.
+
+### Kroki testowe i oczekiwane rezultaty
+
+1. **Krok:** Wejdź na stronę [http://kanbanboard.pl/](http://kanbanboard.pl/).  
+   **Oczekiwany rezultat:** Strona otwiera się poprawnie.
+
+2. **Krok:** W kolumnie "Doing" kliknij `<add task>`.  
+   **Oczekiwany rezultat:** Otwiera się pole do wprowadzenia nazwy zadania.
+
+3. **Krok:** W polu nazwa wpisz `ąćę` i naciśnij `<ok>`.  
+   **Oczekiwany rezultat:** W kolumnie "Doing" widoczne jest zadanie o nazwie `ąćę`.
+
+
+[Test Case Screenshot](https://github.com/ewewis/Test-Cases-for-the-KanbanBoard-Application/blob/main/Dodanie_zadania_ze_znakami_diakrytycznymi_w_nazwie.png)
+
+
+## TC09: Dodanie 30 zadań w kolumnie "To Do"
+
+### Cel testu
+Sprawdzenie, czy istnieje możliwość dodania 30 zadań w kolumnie "To Do".
+
+### Warunki początkowe
+1. Aplikacja [http://kanbanboard.pl/](http://kanbanboard.pl/) działa poprawnie.
+2. W aplikacji znajduje się przycisk `<add task>`.
+
+### Kroki testowe i oczekiwane rezultaty
+
+1. **Krok:** Wejdź na stronę [http://kanbanboard.pl/](http://kanbanboard.pl/).  
+   **Oczekiwany rezultat:** Strona otwiera się poprawnie.
+
+2. **Krok:** W kolumnie "To Do" kliknij `<add task>`.  
+   **Oczekiwany rezultat:** Otwiera się pole do wprowadzenia nazwy zadania.
+
+3. **Krok:** W polu nazwa wpisz `1` i kliknij `<ok>`.  
+   **Oczekiwany rezultat:** W kolumnie "To Do" widoczne jest zadanie o nazwie `1`.
+
+4. **Krok:** Analogicznie wykonaj następne kroki jak w punktach 2 i 3, dodaj kolejnych 29 zadań, wpisując nazwę w kolejności: `2`, `3`, ..., `29`, `30`.  
+   **Oczekiwany rezultat:** W kolumnie "To Do" oprócz zadania o domyślnej nazwie "new task" widocznych jest 30 nowo utworzonych zadań o nazwach `1`, `2`, ..., `30`. Razem 31 zadań.
+
+
+[Test Case Screenshot](https://github.com/ewewis/Test-Cases-for-the-KanbanBoard-Application/blob/main/Dodanie_30_zada%C5%84.png)
+
 
 ---
-
-
-
-
-
 
 
 
