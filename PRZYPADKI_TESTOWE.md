@@ -52,7 +52,7 @@ Sprawdzenie możliwości utworzenia nowej kolumny.
    **Oczekiwany rezultat:** W polu pojawia się wpisana nazwa `<wakacje>`.
 
 4. **Krok:** Naciśnij `<OK>`.  
-   **Oczekiwany rezultat:** Kolumna o nazwie '<wakacje>' zostaje dodana jako ostatnia po prawej stronie.
+   **Oczekiwany rezultat:** Kolumna o nazwie `<wakacje>` zostaje dodana jako ostatnia po prawej stronie.
 
 [Test Case Screenshot](https://github.com/ewewis/Test-Cases-for-the-KanbanBoard-Application/blob/main/Dodanie_nowej_kolumny.png)
 
@@ -89,21 +89,21 @@ Sprawdzenie, czy można dodać kolumnę ze znakami specjalnymi w nazwie.
 
 ### Warunki początkowe:
 1. Aplikacja [http://kanbanboard.pl/](http://kanbanboard.pl/) działa poprawnie.
-2. W aplikacji znajduje się przycisk dodania nowej kolumny: „add new column”.
+2. W aplikacji znajduje się przycisk dodania nowej kolumny: `<Add new column>`.
 
 ### Kroki testowe i oczekiwane rezultaty:
 
 1. **Krok:** Wejdź na stronę [http://kanbanboard.pl/](http://kanbanboard.pl/).  
    **Oczekiwany rezultat:** Strona otwiera się poprawnie.
 
-2. **Krok:** Kliknij przycisk „add new column”.  
+2. **Krok:** Kliknij przycisk `<Add new column>`.  
    **Oczekiwany rezultat:** Wyświetla się okno dialogowe umożliwiające dodanie kolumny.
 
-3. **Krok:** W polu nazwa wpisz „@_!”.  
-   **Oczekiwany rezultat:** W polu pojawia się wpisana nazwa „@_!”.
+3. **Krok:** W polu nazwa wpisz `<@_!>`.  
+   **Oczekiwany rezultat:** W polu pojawia się wpisana nazwa `<@_!>`.
 
-4. **Krok:** Naciśnij „OK”.  
-   **Oczekiwany rezultat:** Kolumna o nazwie „@_!” pojawia się jako ostatnia po prawej stronie.
+5. **Krok:** Naciśnij `<OK>`.  
+   **Oczekiwany rezultat:** Kolumna o nazwie `<@_!>` pojawia się jako ostatnia po prawej stronie.
 
 
 [Test Case Screenshot](https://github.com/ewewis/Test-Cases-for-the-KanbanBoard-Application/blob/main/Dodanie_kolumny_ze_znakami_specjalnymi_w_nazwie.png)
@@ -116,18 +116,18 @@ Sprawdzenie, czy możliwe jest dodanie dwóch kolumn o tej samej nazwie.
 
 ### Warunki początkowe:
 1. Aplikacja [http://kanbanboard.pl/](http://kanbanboard.pl/) działa poprawnie.
-2. W aplikacji znajduje się przycisk dodania nowej kolumny: „add new column”.
+2. W aplikacji znajduje się przycisk dodania nowej kolumny: `<Add new column>`.
 
 ### Kroki testowe i oczekiwane rezultaty:
 
 1. **Krok:** Wejdź na stronę [http://kanbanboard.pl/](http://kanbanboard.pl/).  
    **Oczekiwany rezultat:** Strona otwiera się poprawnie.
 
-2. **Krok:** Kliknij przycisk „add new column” i w polu nazwa wpisz „A”.  
-   **Oczekiwany rezultat:** W aplikacji pojawia się nowa kolumna o nazwie „A”.
+2. **Krok:** Kliknij przycisk `<Add new column>` i w polu nazwa wpisz `<A>`.  
+   **Oczekiwany rezultat:** W aplikacji pojawia się nowa kolumna o nazwie `<A>`.
 
-3. **Krok:** Kliknij ponownie „add new column” i w polu nazwa wpisz „A”.  
-   **Oczekiwany rezultat:** W aplikacji widoczne są dwie kolumny o tej samej nazwie „A”.
+3. **Krok:** Kliknij ponownie `<Add new column>` i w polu nazwa wpisz `<A>`.  
+   **Oczekiwany rezultat:** W aplikacji widoczne są dwie kolumny o tej samej nazwie `<A>`.
 
 [Test Case Screenshot](https://github.com/ewewis/Test-Cases-for-the-KanbanBoard-Application/blob/main/Dodanie_dw%C3%B3ch_kolumn_o_tej_samej_nazwie.png)
 
@@ -139,18 +139,18 @@ Sprawdzenie, czy możliwe jest dodanie kolumny, której nazwa zawiera znaki diak
 
 ### Warunki początkowe:
 1. Aplikacja [http://kanbanboard.pl/](http://kanbanboard.pl/) działa poprawnie.
-2. W aplikacji widoczny jest przycisk dodania nowej kolumny: „add new column”.
+2. W aplikacji widoczny jest przycisk dodania nowej kolumny: `<Add new column>`.
 
 ### Kroki testowe i oczekiwane rezultaty:
 
 1. **Krok:** Wejdź na stronę [http://kanbanboard.pl/](http://kanbanboard.pl/).  
    **Oczekiwany rezultat:** Strona otwiera się poprawnie.
 
-2. **Krok:** Kliknij przycisk „add new column”.  
+2. **Krok:** Kliknij przycisk `<Add new column>`.  
    **Oczekiwany rezultat:** Otwiera się pole do wpisania nazwy kolumny.
 
-3. **Krok:** W polu nazwa wpisz „ńść”.  
-   **Oczekiwany rezultat:** Kolumna o nazwie „ńść” zostaje dodana do listy jako ostatnia po prawej stronie.
+3. **Krok:** W polu nazwa wpisz `<ńść>`.  
+   **Oczekiwany rezultat:** Kolumna o nazwie `<ńść>` zostaje dodana do listy jako ostatnia po prawej stronie.
 
 [Test Case Screenshot](https://github.com/ewewis/Test-Cases-for-the-KanbanBoard-Application/blob/main/Dodanie_kolumny_ze_znakami_diakrytycznymi_w_nazwie.png)
 
@@ -161,20 +161,20 @@ Sprawdzenie, czy można dodać 15 nowych kolumn.
 
 ### Warunki początkowe:
 1. Aplikacja [http://kanbanboard.pl/](http://kanbanboard.pl/) działa poprawnie.
-2. W aplikacji widoczny jest przycisk dodania nowej kolumny: „add new column”.
+2. W aplikacji widoczny jest przycisk dodania nowej kolumny: `<Add new column>`.
 
 ### Kroki testowe i oczekiwane rezultaty:
 
 1. **Krok:** Wejdź na stronę [http://kanbanboard.pl/](http://kanbanboard.pl/).  
    **Oczekiwany rezultat:** Strona otwiera się poprawnie.
 
-2. **Krok:** Kliknij przycisk „add new column”.  
+2. **Krok:** Kliknij przycisk `<Add new column>`.  
    **Oczekiwany rezultat:** Otwiera się pole do wpisania nazwy kolumny.
 
-3. **Krok:** W polu nazwa wpisz „1”.  
-   **Oczekiwany rezultat:** Kolumna o nazwie „1” zostaje dodana do listy jako ostatnia po prawej stronie.
+3. **Krok:** W polu nazwa wpisz `<1>`.  
+   **Oczekiwany rezultat:** Kolumna o nazwie `<1>` zostaje dodana do listy jako ostatnia po prawej stronie.
 
-4. **Krok:** Powtórz kroki 2–3, wpisując kolejno nazwy „2”, „3”, ..., „15”.  
+4. **Krok:** Powtórz kroki 2–3, wpisując kolejno nazwy `<2>`, `<3>`, ..., `<15>`.  
    **Oczekiwany rezultat:** Po dodaniu ostatniej kolumny w aplikacji, oprócz trzech domyślnych kolumn („to do”, „doing”, „done”), widocznych jest 15 nowych kolumn — łącznie 18 kolumn.
 
 [Test Case Screenshot](https://github.com/ewewis/Test-Cases-for-the-KanbanBoard-Application/blob/main/Dodanie_15_nowych_kolumn.png)
