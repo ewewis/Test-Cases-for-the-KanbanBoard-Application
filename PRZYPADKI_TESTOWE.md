@@ -16,16 +16,16 @@ Sprawdzenie, czy użytkownik może anulować dodanie nowej kolumny.
 
 ### Warunki początkowe:  
 1. Aplikacja [http://kanbanboard.pl/](http://kanbanboard.pl/) działa poprawnie.  
-2. W aplikacji widoczny jest przycisk „Add new column”.
+2. W aplikacji widoczny jest przycisk `<Add new column>`.
 
 ### Kroki testowe i oczekiwane rezultaty:
 1. **Krok:** Wejdź na stronę [http://kanbanboard.pl/](http://kanbanboard.pl/).
    **Oczekiwany rezultat:** Strona otwiera się poprawnie.
-2. **Krok:** Kliknij przycisk „Add new column”.
+2. **Krok:** Kliknij przycisk `<Add new column>`.
    **Oczekiwany rezultat:** Wyświetla się okno dialogowe umożliwiające dodanie kolumny.
 3. **Krok:** Wpisz nazwę kolumny.
    **Oczekiwany rezultat:** W polu pojawia się wpisana nazwa.
-4. **Krok:** Kliknij „Anuluj”.
+4. **Krok:** Kliknij `<Anuluj>`.
     **Oczekiwany rezultat:** Kolumna nie zostaje dodana jako ostatnia po prawej stronie.
   
 [Test Case Screenshot](https://github.com/ewewis/Test-Cases-for-the-KanbanBoard-Application/blob/main/Rezygnacja_z_dodania_nowej_kolumny.png)
@@ -37,7 +37,7 @@ Sprawdzenie możliwości utworzenia nowej kolumny.
 
 ### Warunki początkowe:
 1. Aplikacja [http://kanbanboard.pl/](http://kanbanboard.pl/) działa poprawnie.
-2. W aplikacji znajduje się przycisk dodania nowej kolumny: „add new column”.
+2. W aplikacji znajduje się przycisk dodania nowej kolumny: `<Add new column>`.
 
 
 ### Kroki testowe i oczekiwane rezultaty:
@@ -45,14 +45,14 @@ Sprawdzenie możliwości utworzenia nowej kolumny.
 1. **Krok:** Wejdź na stronę [http://kanbanboard.pl/](http://kanbanboard.pl/).  
    **Oczekiwany rezultat:** Strona otwiera się poprawnie.
 
-2. **Krok:** Kliknij przycisk „add new column”.  
+2. **Krok:** Kliknij przycisk `<Add new column>`.  
    **Oczekiwany rezultat:** Wyświetla się okno dialogowe umożliwiające dodanie kolumny.
 
-3. **Krok:** W polu nazwa wpisz „wakacje”.  
-   **Oczekiwany rezultat:** W polu pojawia się wpisana nazwa „wakacje”.
+3. **Krok:** W polu nazwa wpisz `<wakacje>`.  
+   **Oczekiwany rezultat:** W polu pojawia się wpisana nazwa `<wakacje>`.
 
-4. **Krok:** Naciśnij „OK”.  
-   **Oczekiwany rezultat:** Kolumna o nazwie „wakacje” zostaje dodana jako ostatnia po prawej stronie.
+4. **Krok:** Naciśnij `<OK>`.  
+   **Oczekiwany rezultat:** Kolumna o nazwie '<wakacje>' zostaje dodana jako ostatnia po prawej stronie.
 
 [Test Case Screenshot](https://github.com/ewewis/Test-Cases-for-the-KanbanBoard-Application/blob/main/Dodanie_nowej_kolumny.png)
 
@@ -64,21 +64,21 @@ Sprawdzenie możliwości dodania kolumny bez nazwy.
 
 ### Warunki początkowe:
 1. Aplikacja [http://kanbanboard.pl/](http://kanbanboard.pl/) działa poprawnie.
-2. W aplikacji znajduje się przycisk dodania nowej kolumny: „add new column”.
+2. W aplikacji znajduje się przycisk dodania nowej kolumny: `<Add new column>`.
 
 ### Kroki testowe i oczekiwane rezultaty:
 
 1. **Krok:** Wejdź na stronę [http://kanbanboard.pl/](http://kanbanboard.pl/).  
    **Oczekiwany rezultat:** Strona otwiera się poprawnie.
 
-2. **Krok:** Kliknij przycisk „add new column”.  
+2. **Krok:** Kliknij przycisk `<Add new column>`.  
    **Oczekiwany rezultat:** Wyświetla się okno dialogowe umożliwiające dodanie kolumny.
 
 3. **Krok:** Pozostaw pole nazwy puste.  
    **Oczekiwany rezultat:** Pole nazwy pozostaje puste.
 
-4. **Krok:** Naciśnij „OK”.  
-   **Oczekiwany rezultat:** Kolumna dodaje się jako ostatnia na stronie z domyślną nazwą „Kolumna”.
+4. **Krok:** Naciśnij `<OK>`.  
+   **Oczekiwany rezultat:** Kolumna dodaje się jako ostatnia na stronie z domyślną nazwą `<Kolumna>`.
 
 [Test Case Screenshot](https://github.com/ewewis/Test-Cases-for-the-KanbanBoard-Application/blob/main/Dodanie_kolumny_bez_nazwy.png)
 
@@ -207,7 +207,7 @@ Sprawdzenie, czy można dodać kolumnę, której nazwa zawiera 40 znaków.
 
 ---
 
-## 2. Dodawanie zadań w kolumnach
+# 2. Dodawanie zadań w kolumnach
 
 ## TC01: Dodanie nowego zadania w kolumnie „to do”
 
@@ -427,6 +427,90 @@ Sprawdzenie, czy istnieje możliwość dodania 30 zadań w kolumnie "To Do".
 
 
 [Test Case Screenshot](https://github.com/ewewis/Test-Cases-for-the-KanbanBoard-Application/blob/main/Dodanie_30_zada%C5%84.png)
+
+
+## TC10: Dodanie zadania w kolumnie "To Do" z nazwą zawierającą 50 znaków
+
+### Cel testu
+Sprawdzenie, czy w kolumnie "To Do" można dodać zadanie o nazwie zawierającej 50 znaków.
+
+### Warunki początkowe
+1. Aplikacja [http://kanbanboard.pl/](http://kanbanboard.pl/) działa poprawnie.
+2. W aplikacji znajduje się przycisk `<add task>`.
+
+### Kroki testowe i oczekiwane rezultaty
+
+1. **Krok:** Wejdź na stronę [http://kanbanboard.pl/](http://kanbanboard.pl/).  
+   **Oczekiwany rezultat:** Strona otwiera się poprawnie.
+
+2. **Krok:** W kolumnie "To Do" kliknij `<add task>`.  
+   **Oczekiwany rezultat:** Otwiera się pole do wprowadzenia nazwy zadania.
+
+3. **Krok:** W polu nazwa wpisz 50 znaków, np. `xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx`.  
+   **Oczekiwany rezultat:** Pole akceptuje nazwę o długości 50 znaków.
+
+4. **Krok:** Kliknij `<ok>`.  
+   **Oczekiwany rezultat:** W kolumnie "To Do" widoczne jest zadanie, którego nazwa zawiera 50 znaków.
+
+
+[Test Case Screenshot](https://github.com/ewewis/Test-Cases-for-the-KanbanBoard-Application/blob/main/Dodanie_zadania_z_50_znakami_w_nazwie.png)
+
+
+# 3. Usuwanie kolumn
+
+
+## TC01: Usunięcie kolumny "To Do"
+
+### Cel testu
+Sprawdzenie, czy można usunąć kolumnę "To Do".
+
+### Warunki początkowe
+1. Aplikacja [http://kanbanboard.pl/](http://kanbanboard.pl/) działa poprawnie.
+2. W aplikacji widoczny jest przycisk `<x>`.
+
+### Kroki testowe i oczekiwane rezultaty
+
+1. **Krok:** Wejdź na stronę [http://kanbanboard.pl/](http://kanbanboard.pl/).  
+   **Oczekiwany rezultat:** Strona otwiera się poprawnie.
+
+2. **Krok:** W nazwie kolumny "To Do" kliknij `<x>`.  
+   **Oczekiwany rezultat:** W aplikacji kolumna "To Do" nie jest widoczna.
+
+
+[Test Case Screenshot](https://github.com/ewewis/Test-Cases-for-the-KanbanBoard-Application/blob/main/Usuni%C4%99cie_kolumny_to_do.png)
+
+
+## TC02: Usunięcie wszystkich trzech domyślnych kolumn
+
+### Cel testu
+Sprawdzenie, czy można usunąć wszystkie trzy domyślne kolumny w aplikacji.
+
+### Warunki początkowe
+1. Aplikacja [http://kanbanboard.pl/](http://kanbanboard.pl/) działa poprawnie.
+2. W aplikacji znajduje się przycisk `<x>`.
+
+### Kroki testowe i oczekiwane rezultaty
+
+1. **Krok:** Wejdź na stronę [http://kanbanboard.pl/](http://kanbanboard.pl/).  
+   **Oczekiwany rezultat:** Strona otwiera się poprawnie.
+
+2. **Krok:** Kliknij `<x>` w kolumnie "To Do".  
+   **Oczekiwany rezultat:** Kolumna "To Do" została usunięta.
+
+3. **Krok:** Kliknij `<x>` w kolumnie "Doing".  
+   **Oczekiwany rezultat:** Kolumna "Doing" została usunięta.
+
+4. **Krok:** Kliknij `<x>` w kolumnie "Done".  
+   **Oczekiwany rezultat:** Wszystkie kolumny domyślne zostały usunięte — w aplikacji nie jest widoczna żadna kolumna.
+
+
+[Test Case Screenshot](https://github.com/ewewis/Test-Cases-for-the-KanbanBoard-Application/blob/main/Usuni%C4%99cie_trzech_domy%C5%9Blnych_kolumn.png)
+
+
+
+
+
+
 
 
 ---
