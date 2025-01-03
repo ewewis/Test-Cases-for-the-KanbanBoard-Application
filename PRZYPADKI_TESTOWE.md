@@ -504,31 +504,34 @@ Sprawdzenie, czy można usunąć wszystkie trzy domyślne kolumny w aplikacji.
    **Oczekiwany rezultat:** Wszystkie kolumny domyślne zostały usunięte — w aplikacji nie jest widoczna żadna kolumna.
 
 
-# 3. Usuwanie zadań
+[Test Case Screenshot](https://github.com/ewewis/Test-Cases-for-the-KanbanBoard-Application/blob/main/Usuni%C4%99cie_trzech_domy%C5%9Blnych_kolumn.png)
 
 
-## **TC03: Usunięcie zadania `new task` w kolumnie "To Do"**
+# 4. Usuwanie zadań
 
-### **Cel testu**  
+
+## TC01: Usunięcie zadania `new task` w kolumnie "To Do"
+
+### Cel testu
 Sprawdzenie, czy można usunąć domyślne zadanie `new task`.
 
-### **Warunki początkowe**  
+### Warunki początkowe
 1. Aplikacja [http://kanbanboard.pl/](http://kanbanboard.pl/) działa poprawnie.  
 2. W aplikacji znajduje się domyślne zadanie o nazwie `new task`.
 
-### **Kroki testowe i oczekiwane rezultaty**
+### Kroki testowe i oczekiwane rezultaty
 
 1. **Krok:** Wejdź na stronę [http://kanbanboard.pl/](http://kanbanboard.pl/).  
    **Oczekiwany rezultat:** Strona otwiera się poprawnie.
 
-2. **Krok:** Kliknij `<x>` w zadaniu `new task` w kolumnie "To Do".  
+2. **Krok:** Kliknij `x` w `new task` w kolumnie "To Do".  
    **Oczekiwany rezultat:** Domyślne zadanie `new task` zostało usunięte z kolumny "To Do".
 
 
+[Test Case Screenshot](https://github.com/ewewis/Test-Cases-for-the-KanbanBoard-Application/blob/main/Usuni%C4%99cie_domy%C5%9Blnego_zadania_'newtask'.png)
 
 
 
-[Test Case Screenshot](https://github.com/ewewis/Test-Cases-for-the-KanbanBoard-Application/blob/main/Usuni%C4%99cie_trzech_domy%C5%9Blnych_kolumn.png)
 
 
 
