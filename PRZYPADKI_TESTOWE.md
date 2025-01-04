@@ -644,7 +644,7 @@ Sprawdzenie, czy istnieje możliwość zmiany kolejności zadań w kolumnie "Doi
 [Test Case Screenshot](https://github.com/ewewis/Test-Cases-for-the-KanbanBoard-Application/blob/main/Przenoszenie_zada%C5%84_w_kolumnie.png)
 
 
-# 5. Przenoszenie kolumn
+# 6. Przenoszenie kolumn
 
 
 ## TC01: Przeniesienie kolumny "To Do" za kolumnę "Done"
