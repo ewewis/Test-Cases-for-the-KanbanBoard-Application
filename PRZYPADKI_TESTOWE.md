@@ -510,7 +510,7 @@ Sprawdzenie, czy można usunąć wszystkie trzy domyślne kolumny w aplikacji.
 # 4. Usuwanie zadań
 
 
-### TC01: Usunięcie zadania `new task` w kolumnie `To Do`
+## TC01: Usunięcie zadania `new task` w kolumnie `To Do`
 
 ### Cel testu
 Sprawdzenie, czy można usunąć domyślne zadanie `new task`.
@@ -531,17 +531,17 @@ Sprawdzenie, czy można usunąć domyślne zadanie `new task`.
 [Test Case Screenshot](https://github.com/ewewis/Test-Cases-for-the-KanbanBoard-Application/blob/main/Usuni%C4%99cie_domy%C5%9Blnego_zadania_'newtask'.png)
 
 
-### TC02: Usunięcie nowo utworzonego zadania 
+## TC02: Usunięcie nowo utworzonego zadania 
 
-#### Cel testu
+### Cel testu
 Sprawdzenie, czy można usunąć zadanie wcześniej utworzone przez użytkownika.
 
-#### Warunki początkowe
+### Warunki początkowe
 1. Aplikacja [http://kanbanboard.pl/](http://kanbanboard.pl/) działa poprawnie.
 2. W aplikacji znajduje się przycisk `<add task>`.
 3. W aplikacji znajduje się przycisk `<x>`.
 
-#### Kroki testowe i oczekiwane rezultaty
+### Kroki testowe i oczekiwane rezultaty
 
 1. **Krok:** Wejdź na stronę [http://kanbanboard.pl/](http://kanbanboard.pl/).  
    **Oczekiwany rezultat:** Strona otwiera się poprawnie.
@@ -559,17 +559,17 @@ Sprawdzenie, czy można usunąć zadanie wcześniej utworzone przez użytkownika
 [Test Case Screenshot](https://github.com/ewewis/Test-Cases-for-the-KanbanBoard-Application/blob/main/Usuni%C4%99cie_nowo_utworzonego_zadania.png)
 
 
-### TC03: Usunięcie wszystkich zadań z 3 kolumn
+## TC03: Usunięcie wszystkich zadań z 3 kolumn
 
-#### Cel testu
+### Cel testu
 Sprawdzenie, czy istnieje możliwość, aby w trzech domyślnych kolumnach "To Do", "Doing", "Done" nie było widoczne żadne zadanie.
 
-#### Warunki początkowe
+### Warunki początkowe
 1. Aplikacja [http://kanbanboard.pl/](http://kanbanboard.pl/) działa poprawnie.
 2. W aplikacji znajduje się przycisk `<add task>`.
 3. W kolumnie "To Do" znajduje się zadanie o domyślnej nazwie "new task".
 
-#### Kroki testowe i oczekiwane rezultaty
+### Kroki testowe i oczekiwane rezultaty
 
 1. **Krok:** Wejdź na stronę [http://kanbanboard.pl/](http://kanbanboard.pl/).  
    **Oczekiwany rezultat:** Strona otwiera się poprawnie.
@@ -587,11 +587,88 @@ Sprawdzenie, czy istnieje możliwość, aby w trzech domyślnych kolumnach "To D
 [Test Case Screenshot](https://github.com/ewewis/Test-Cases-for-the-KanbanBoard-Application/blob/main/Usuni%C4%99cie_wszystkich_zada%C5%84_z_trzech_kolumn.png)
 
 
-# 4. Przenoszenie zadań
+# 5. Przenoszenie zadań
 
 
+## TC01: Przeniesienie zadania `new task` z kolumny "To Do" do kolumny "Doing"
+
+### Cel testu
+Sprawdzenie, czy można przenieść zadanie `new task` z kolumny "To Do" do kolumny "Doing".
+
+### Warunki początkowe
+1. Aplikacja działa poprawnie.
+2. W kolumnie "To Do" znajduje się zadanie z domyślną nazwą `new task`.
+
+### Kroki testowe i oczekiwane rezultaty
+
+1. **Krok:** Wejdź na stronę [http://kanbanboard.pl/](http://kanbanboard.pl/).  
+   **Oczekiwany rezultat:** Strona otwiera się poprawnie.
+
+2. **Krok:** Kliknij w miejscu, gdzie znajduje się zadanie `new task`.  
+   **Oczekiwany rezultat:** Zadanie `new task` zostaje zaznaczone.
+
+3. **Krok:** Gdy w lewym górnym rogu zobaczysz małą czarną kropkę, przeciągnij zadanie do kolumny "Doing".  
+   **Oczekiwany rezultat:** Zadanie jest przenoszone do kolumny "Doing".
+
+4. **Krok:** Upuść zadanie w kolumnie "Doing".  
+   **Oczekiwany rezultat:** W kolumnie "Doing" pojawia się zadanie o nazwie `new task`.
 
 
+[Test Case Screenshot](https://github.com/ewewis/Test-Cases-for-the-KanbanBoard-Application/blob/main/Przeniesienie_zadania.png)
+
+
+## TC03: Przeniesienie zadań w kolumnie "Doing"
+
+### Cel testu
+Sprawdzenie, czy istnieje możliwość zmiany kolejności zadań w kolumnie "Doing" poprzez zastosowanie metody drag & drop.
+
+### Warunki początkowe
+1. Aplikacja [http://kanbanboard.pl/](http://kanbanboard.pl/) działa poprawnie.
+2. W aplikacji znajduje się przycisk `<add task>`.
+
+### Kroki testowe i oczekiwane rezultaty
+
+1. **Krok:** Wejdź na stronę [http://kanbanboard.pl/](http://kanbanboard.pl/).  
+   **Oczekiwany rezultat:** Strona otwiera się poprawnie.
+
+2. **Krok:** W kolumnie "Doing" kliknij `<add task>` i dodaj zadanie o nazwie "1", zatwierdź `<ok>`.  
+   **Oczekiwany rezultat:** W kolumnie "Doing" pojawia się zadanie o nazwie "1".
+
+3. **Krok:** Analogicznie jak w punkcie drugim, kliknij `<add task>`, wpisz nazwę "2" i zatwierdź `<ok>`.  
+   **Oczekiwany rezultat:** W kolumnie "Doing" pojawiają się dwa zadania: "1" oraz "2" (w tej kolejności).
+
+4. **Krok:** Chwyć zadanie o nazwie "2" i upuść je przed zadaniem o nazwie "1".  
+   **Oczekiwany rezultat:** W kolumnie "Doing" znajdują się dwa zadania z nazwą odpowiednio "2", "1". Zadanie o nazwie "2" zostało przeniesione przed zadanie o nazwie "1".
+
+
+[Test Case Screenshot](https://github.com/ewewis/Test-Cases-for-the-KanbanBoard-Application/blob/main/Przenoszenie_zada%C5%84_w_kolumnie.png)
+
+
+# 5. Przenoszenie kolumn
+
+
+## TC01: Przeniesienie kolumny "To Do" za kolumnę "Done"
+
+### Cel testu
+Sprawdzenie, czy istnieje możliwość przeniesienia kolumny "To Do" za kolumnę "Done", tak aby znajdowała się jako ostatnia z prawej strony.
+
+### Warunki początkowe
+1. Aplikacja [http://kanbanboard.pl/](http://kanbanboard.pl/) działa poprawnie.
+2. W aplikacji znajdują się trzy kolumny odpowiednio od lewej strony: "To Do", "Doing", "Done".
+
+### Kroki testowe i oczekiwane rezultaty
+
+1. **Krok:** Wejdź na stronę [http://kanbanboard.pl/](http://kanbanboard.pl/).  
+   **Oczekiwany rezultat:** Strona otwiera się poprawnie.
+
+2. **Krok:** Chwyć za kolumnę "To Do".  
+   **Oczekiwany rezultat:** Kolumna "To Do" zostaje wybrana do przeniesienia.
+
+3. **Krok:** Przenieś kolumnę "To Do" i upuść tak, aby znajdowała się za kolumną "Done".  
+   **Oczekiwany rezultat:** W aplikacji widoczne są trzy kolumny w kolejności: "Doing", "Done", "To Do". Kolumna "To Do" została pomyślnie przeniesiona na koniec.
+
+
+[Test Case Screenshot](https://github.com/ewewis/Test-Cases-for-the-KanbanBoard-Application/blob/main/Przeniesienie_kolumny_'to%20do'_za_kolumn%C4%99_'done'.png)
 
 
 
