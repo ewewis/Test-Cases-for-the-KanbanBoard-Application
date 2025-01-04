@@ -510,7 +510,7 @@ Sprawdzenie, czy można usunąć wszystkie trzy domyślne kolumny w aplikacji.
 # 4. Usuwanie zadań
 
 
-## TC01: Usunięcie zadania `new task` w kolumnie "To Do"
+### TC01: Usunięcie zadania `new task` w kolumnie `To Do`
 
 ### Cel testu
 Sprawdzenie, czy można usunąć domyślne zadanie `new task`.
@@ -524,8 +524,8 @@ Sprawdzenie, czy można usunąć domyślne zadanie `new task`.
 1. **Krok:** Wejdź na stronę [http://kanbanboard.pl/](http://kanbanboard.pl/).  
    **Oczekiwany rezultat:** Strona otwiera się poprawnie.
 
-2. **Krok:** Kliknij `x` w `new task` w kolumnie "To Do".  
-   **Oczekiwany rezultat:** Domyślne zadanie `new task` zostało usunięte z kolumny "To Do".
+2. **Krok:** Kliknij `x` w `new task` w kolumnie `To Do`.  
+   **Oczekiwany rezultat:** Domyślne zadanie `new task` zostało usunięte z kolumny `To Do`.
 
 
 [Test Case Screenshot](https://github.com/ewewis/Test-Cases-for-the-KanbanBoard-Application/blob/main/Usuni%C4%99cie_domy%C5%9Blnego_zadania_'newtask'.png)
