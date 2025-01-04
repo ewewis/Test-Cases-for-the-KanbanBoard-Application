@@ -531,6 +531,64 @@ Sprawdzenie, czy można usunąć domyślne zadanie `new task`.
 [Test Case Screenshot](https://github.com/ewewis/Test-Cases-for-the-KanbanBoard-Application/blob/main/Usuni%C4%99cie_domy%C5%9Blnego_zadania_'newtask'.png)
 
 
+### TC02: Usunięcie nowo utworzonego zadania 
+
+#### Cel testu
+Sprawdzenie, czy można usunąć zadanie wcześniej utworzone przez użytkownika.
+
+#### Warunki początkowe
+1. Aplikacja [http://kanbanboard.pl/](http://kanbanboard.pl/) działa poprawnie.
+2. W aplikacji znajduje się przycisk `<add task>`.
+3. W aplikacji znajduje się przycisk `<x>`.
+
+#### Kroki testowe i oczekiwane rezultaty
+
+1. **Krok:** Wejdź na stronę [http://kanbanboard.pl/](http://kanbanboard.pl/).  
+   **Oczekiwany rezultat:** Strona otwiera się poprawnie.
+
+2. **Krok:** W kolumnie "Doing" kliknij `<add task>`.  
+   **Oczekiwany rezultat:** Wyświetla się pole umożliwiające dodanie zadania.
+
+3. **Krok:** Wpisz nazwę zadania "c" i kliknij `<OK>`.  
+   **Oczekiwany rezultat:** W kolumnie "Doing" pojawia się nowe zadanie o nazwie "c".
+
+4. **Krok:** W nowo dodanym zadaniu "c" kliknij `<x>`.  
+   **Oczekiwany rezultat:** W kolumnie "Doing" nie jest widoczne zadanie o nazwie "c".
+
+
+[Test Case Screenshot](https://github.com/ewewis/Test-Cases-for-the-KanbanBoard-Application/blob/main/Usuni%C4%99cie_nowo_utworzonego_zadania.png)
+
+
+### TC03: Usunięcie wszystkich zadań z 3 kolumn
+
+#### Cel testu
+Sprawdzenie, czy istnieje możliwość, aby w trzech domyślnych kolumnach "To Do", "Doing", "Done" nie było widoczne żadne zadanie.
+
+#### Warunki początkowe
+1. Aplikacja [http://kanbanboard.pl/](http://kanbanboard.pl/) działa poprawnie.
+2. W aplikacji znajduje się przycisk `<add task>`.
+3. W kolumnie "To Do" znajduje się zadanie o domyślnej nazwie "new task".
+
+#### Kroki testowe i oczekiwane rezultaty
+
+1. **Krok:** Wejdź na stronę [http://kanbanboard.pl/](http://kanbanboard.pl/).  
+   **Oczekiwany rezultat:** Strona otwiera się poprawnie.
+
+2. **Krok:** W kolumnie "Doing", "Done" kliknij `<add task>`, tak aby w trzech kolumnach znajdowało się po jednym zadaniu.  
+   **Oczekiwany rezultat:** Każda kolumna zawiera po jednym zadaniu.
+
+3. **Krok:** Wpisz nazwę i kliknij `<OK>`.  
+   **Oczekiwany rezultat:** Zadanie zostaje dodane do kolumny.
+
+4. **Krok:** W każdej kolumnie, przy każdym z trzech zadań kliknij `<x>`.  
+   **Oczekiwany rezultat:** We wszystkich trzech kolumnach nie ma żadnego zadania.
+
+
+[Test Case Screenshot](https://github.com/ewewis/Test-Cases-for-the-KanbanBoard-Application/blob/main/Usuni%C4%99cie_wszystkich_zada%C5%84_z_trzech_kolumn.png)
+
+
+# 4. Przenoszenie zadań
+
 
 
 
