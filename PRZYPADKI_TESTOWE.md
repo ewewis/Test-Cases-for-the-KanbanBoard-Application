@@ -671,7 +671,79 @@ Sprawdzenie, czy istnieje możliwość przeniesienia kolumny "To Do" za kolumnę
 [Test Case Screenshot](https://github.com/ewewis/Test-Cases-for-the-KanbanBoard-Application/blob/main/Przeniesienie_kolumny_'to%20do'_za_kolumn%C4%99_'done'.png)
 
 
+## TC02: Przeniesienie kolumny "Done" przed kolumnę "To Do"
 
+### Cel testu
+Sprawdzenie, czy istnieje możliwość przeniesienia kolumny "Done" tak, aby znajdowała się jako pierwsza, przed kolumną "To Do".
+
+### Warunki początkowe
+1. Aplikacja [http://kanbanboard.pl/](http://kanbanboard.pl/) działa poprawnie.
+2. W aplikacji znajdują się trzy kolumny w kolejności: "To Do", "Doing", "Done".
+
+### Kroki testowe i oczekiwane rezultaty
+
+1. **Krok:** Wejdź na stronę [http://kanbanboard.pl/](http://kanbanboard.pl/).  
+   **Oczekiwany rezultat:** Strona otwiera się poprawnie.
+
+2. **Krok:** Chwyć za kolumnę "Done".  
+   **Oczekiwany rezultat:** Kolumna "Done" zostaje wybrana do przeniesienia.
+
+3. **Krok:** Przeciągnij kolumnę "Done" i upuść tak, aby znajdowała się przed kolumną "To Do".  
+   **Oczekiwany rezultat:** W aplikacji widoczne są trzy kolumny w kolejności: "Done", "To Do", "Doing". Kolumna "Done" została pomyślnie przeniesiona na pierwsze miejsce.
+
+
+[Test Case Screenshot](https://github.com/ewewis/Test-Cases-for-the-KanbanBoard-Application/blob/main/Przeniesienie_kolumny_'done'_przed_kolumn%C4%99_'to%20do'.png)
+
+
+## TC03: Przeniesienie nowo utworzonej kolumny o nazwie "A"
+
+### Cel testu
+Sprawdzenie, czy można przenieść kolumnę o nazwie "A", utworzoną przez użytkownika.
+
+### Warunki początkowe
+1. Aplikacja [http://kanbanboard.pl/](http://kanbanboard.pl/) działa poprawnie.
+2. W aplikacji znajdują się trzy kolumny w kolejności: "To Do", "Doing", "Done".
+
+### Kroki testowe i oczekiwane rezultaty
+
+1. **Krok:** Wejdź na stronę [http://kanbanboard.pl/](http://kanbanboard.pl/).  
+   **Oczekiwany rezultat:** Strona otwiera się poprawnie.
+
+2. **Krok:** Kliknij przycisk "Add new column".  
+   **Oczekiwany rezultat:** Pojawia się pole do wprowadzenia nazwy nowej kolumny.
+
+3. **Krok:** W polu nazwa wpisz "A" i zatwierdź przyciskiem `OK`.  
+   **Oczekiwany rezultat:** W aplikacji widoczne są cztery kolumny w kolejności: "To Do", "Doing", "Done", "A".
+
+4. **Krok:** Chwyć za kolumnę "A", przeciągnij i upuść tak, aby znajdowała się przed kolumną "To Do".  
+   **Oczekiwany rezultat:** Kolumna o nazwie "A" zostaje przeniesiona przed kolumnę **"To Do" i widoczna jest jako pierwsza po lewej stronie.
+
+
+[Test Case Screenshot](https://github.com/ewewis/Test-Cases-for-the-KanbanBoard-Application/blob/main/Przeniesienie_nowo_utworzonej_kolumny.png)
+
+
+# 7. Użytkowanie aplikacji
+
+
+## TC01: Odświeżenie strony aplikacji
+
+### Cel testu
+Sprawdzenie, co się stanie po odświeżeniu strony oraz czy zachowana jest praca użytkownika w aplikacji.
+
+### Warunki początkowe
+1. Aplikacja [http://kanbanboard.pl/](http://kanbanboard.pl/) działa poprawnie.
+2. Użytkownik posiada dodane przez siebie zadania w poszczególnych kolumnach i pracuje nad nimi.
+
+### Kroki testowe i oczekiwane rezultaty
+
+1. **Krok:** Wejdź na stronę [http://kanbanboard.pl/](http://kanbanboard.pl/).  
+   **Oczekiwany rezultat:** Strona otwiera się poprawnie.
+
+2. **Krok:** W przeglądarce kliknij "Odśwież bieżącą stronę" lub użyj skrótu klawiszowego Ctrl+R.  
+   **Oczekiwany rezultat:** Po odświeżeniu strony dotychczasowa praca nie została utracona. Użytkownik nadal może pracować nad dodanymi przez siebie zadaniami.
+
+
+[Test Case Screenshot](https://github.com/ewewis/Test-Cases-for-the-KanbanBoard-Application/blob/main/Od%C5%9Bwie%C5%BCenie_strony_aplikacji.png)
 
 
 
